@@ -1,0 +1,38 @@
+<svg width="220" height="175" viewBox="0 0 220 175" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad2048" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#BBADA0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8F7A66;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="220" height="175" fill="url(#grad2048)"/>
+  <!-- Game grid -->
+  <rect x="70" y="50" width="80" height="80" fill="#CDC1B4" rx="6"/>
+  <!-- Number tiles -->
+  <rect x="75" y="55" width="17" height="17" fill="#EEE4DA" rx="2"/>
+  <text x="83.5" y="66" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#776E65">2</text>
+  
+  <rect x="94" y="55" width="17" height="17" fill="#EDE0C8" rx="2"/>
+  <text x="102.5" y="66" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#776E65">4</text>
+  
+  <rect x="113" y="55" width="17" height="17" fill="#F2B179" rx="2"/>
+  <text x="121.5" y="66" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="white">16</text>
+  
+  <rect x="132" y="55" width="17" height="17" fill="#F59563" rx="2"/>
+  <text x="140.5" y="66" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="white">32</text>
+
+  <rect x="75" y="74" width="17" height="17" fill="#F67C5F" rx="2"/>
+  <text x="83.5" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="white">64</text>
+
+  <rect x="94" y="74" width="17" height="17" fill="#F65E3B" rx="2"/>
+  <text x="102.5" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">128</text>
+
+  <rect x="113" y="74" width="17" height="17" fill="#EDCF72" rx="2"/>
+  <text x="121.5" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">256</text>
+
+  <rect x="132" y="93" width="17" height="17" fill="#EDCC61" rx="2"/>
+  <text x="140.5" y="104" text-anchor="middle" font-family="Arial, sans-serif" font-size="5" font-weight="bold" fill="white">2048</text>
+
+  <text x="110" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">2048</text>
+  <text x="110" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#F9F6F2">Slide to Win</text>
+</svg>

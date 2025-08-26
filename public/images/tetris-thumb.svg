@@ -1,0 +1,26 @@
+<svg width="220" height="175" viewBox="0 0 220 175" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tetrisGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E1E1E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#333333;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="220" height="175" fill="url(#tetrisGradient)"/>
+  <!-- T-piece -->
+  <rect x="85" y="60" width="15" height="15" fill="#FF0080"/>
+  <rect x="100" y="60" width="15" height="15" fill="#FF0080"/>
+  <rect x="115" y="60" width="15" height="15" fill="#FF0080"/>
+  <rect x="100" y="75" width="15" height="15" fill="#FF0080"/>
+  <!-- L-piece -->
+  <rect x="70" y="90" width="15" height="15" fill="#0080FF"/>
+  <rect x="85" y="90" width="15" height="15" fill="#0080FF"/>
+  <rect x="100" y="90" width="15" height="15" fill="#0080FF"/>
+  <rect x="100" y="105" width="15" height="15" fill="#0080FF"/>
+  <!-- Square piece -->
+  <rect x="125" y="90" width="15" height="15" fill="#FFFF00"/>
+  <rect x="140" y="90" width="15" height="15" fill="#FFFF00"/>
+  <rect x="125" y="105" width="15" height="15" fill="#FFFF00"/>
+  <rect x="140" y="105" width="15" height="15" fill="#FFFF00"/>
+  <text x="110" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">TETRIS</text>
+  <text x="110" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#CCCCCC">Classic Blocks</text>
+</svg>

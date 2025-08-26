@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bloodmoney-game.vercel.app/sitemap.xml
+
+# Important pages
+Allow: /
+Allow: /games
+Allow: /games/*
+Allow: /about
+Allow: /contact
+Allow: /privacy
+Allow: /terms
+
+# Disallow admin or private areas (if any)
+# None currently
+
+# Crawl delay
+Crawl-delay: 1

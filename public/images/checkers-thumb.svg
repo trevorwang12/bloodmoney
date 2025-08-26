@@ -1,0 +1,33 @@
+<svg width="220" height="175" viewBox="0 0 220 175" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="checkersGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#654321;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B4513;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="220" height="175" fill="url(#checkersGradient)"/>
+  <!-- Checkers board -->
+  <rect x="70" y="50" width="80" height="80" fill="#DEB887"/>
+  <!-- Alternating squares -->
+  <rect x="70" y="50" width="10" height="10" fill="#8B4513"/>
+  <rect x="90" y="50" width="10" height="10" fill="#8B4513"/>
+  <rect x="110" y="50" width="10" height="10" fill="#8B4513"/>
+  <rect x="130" y="50" width="10" height="10" fill="#8B4513"/>
+  <rect x="80" y="60" width="10" height="10" fill="#8B4513"/>
+  <rect x="100" y="60" width="10" height="10" fill="#8B4513"/>
+  <rect x="120" y="60" width="10" height="10" fill="#8B4513"/>
+  <rect x="140" y="60" width="10" height="10" fill="#8B4513"/>
+  <!-- Checker pieces -->
+  <circle cx="75" cy="55" r="4" fill="#DC143C" stroke="#8B0000" stroke-width="1"/>
+  <circle cx="95" cy="55" r="4" fill="#DC143C" stroke="#8B0000" stroke-width="1"/>
+  <circle cx="115" cy="55" r="4" fill="#DC143C" stroke="#8B0000" stroke-width="1"/>
+  <circle cx="135" cy="55" r="4" fill="#DC143C" stroke="#8B0000" stroke-width="1"/>
+  
+  <circle cx="85" cy="115" r="4" fill="#000000" stroke="#333333" stroke-width="1"/>
+  <circle cx="105" cy="115" r="4" fill="#000000" stroke="#333333" stroke-width="1"/>
+  <circle cx="125" cy="115" r="4" fill="#000000" stroke="#333333" stroke-width="1"/>
+  <circle cx="145" cy="115" r="4" fill="#000000" stroke="#333333" stroke-width="1"/>
+  
+  <text x="110" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">CHECKERS</text>
+  <text x="110" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#F5DEB3">Strategic Board</text>
+</svg>

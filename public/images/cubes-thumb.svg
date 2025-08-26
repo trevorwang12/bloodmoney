@@ -1,0 +1,33 @@
+<svg width="220" height="175" viewBox="0 0 220 175" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cubesGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6347;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF4500;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="220" height="175" fill="url(#cubesGradient)"/>
+  <!-- Falling cubes -->
+  <rect x="85" y="30" width="12" height="12" fill="#FFD700" stroke="#FFA500" stroke-width="1"/>
+  <rect x="100" y="30" width="12" height="12" fill="#00CED1" stroke="#008B8B" stroke-width="1"/>
+  <rect x="115" y="30" width="12" height="12" fill="#FF69B4" stroke="#C71585" stroke-width="1"/>
+  
+  <rect x="70" y="50" width="12" height="12" fill="#32CD32" stroke="#228B22" stroke-width="1"/>
+  <rect x="85" y="50" width="12" height="12" fill="#FF6347" stroke="#FF4500" stroke-width="1"/>
+  <rect x="100" y="50" width="12" height="12" fill="#9370DB" stroke="#8B008B" stroke-width="1"/>
+  <rect x="115" y="50" width="12" height="12" fill="#FFD700" stroke="#FFA500" stroke-width="1"/>
+  <rect x="130" y="50" width="12" height="12" fill="#00CED1" stroke="#008B8B" stroke-width="1"/>
+  
+  <rect x="85" y="70" width="12" height="12" fill="#FF69B4" stroke="#C71585" stroke-width="1"/>
+  <rect x="100" y="70" width="12" height="12" fill="#32CD32" stroke="#228B22" stroke-width="1"/>
+  <rect x="115" y="70" width="12" height="12" fill="#FF6347" stroke="#FF4500" stroke-width="1"/>
+  
+  <!-- Stack of cubes at bottom -->
+  <rect x="70" y="90" width="12" height="12" fill="#9370DB" stroke="#8B008B" stroke-width="1"/>
+  <rect x="85" y="90" width="12" height="12" fill="#FFD700" stroke="#FFA500" stroke-width="1"/>
+  <rect x="100" y="90" width="12" height="12" fill="#00CED1" stroke="#008B8B" stroke-width="1"/>
+  <rect x="115" y="90" width="12" height="12" fill="#FF69B4" stroke="#C71585" stroke-width="1"/>
+  <rect x="130" y="90" width="12" height="12" fill="#32CD32" stroke="#228B22" stroke-width="1"/>
+  
+  <text x="110" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">FALLING CUBES</text>
+  <text x="110" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFE4E1">Colorful Blocks</text>
+</svg>

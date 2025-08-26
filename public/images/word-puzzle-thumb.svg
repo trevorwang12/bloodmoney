@@ -1,0 +1,58 @@
+<svg width="220" height="175" viewBox="0 0 220 175" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wordGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4682B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#191970;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="220" height="175" fill="url(#wordGradient)"/>
+  <!-- Word search grid -->
+  <rect x="60" y="40" width="100" height="80" fill="white" stroke="#333" stroke-width="1"/>
+  <!-- Grid lines -->
+  <line x1="70" y1="40" x2="70" y2="120" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="80" y1="40" x2="80" y2="120" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="90" y1="40" x2="90" y2="120" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="100" y1="40" x2="100" y2="120" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="110" y1="40" x2="110" y2="120" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="120" y1="40" x2="120" y2="120" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="130" y1="40" x2="130" y2="120" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="140" y1="40" x2="140" y2="120" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="150" y1="40" x2="150" y2="120" stroke="#E0E0E0" stroke-width="0.5"/>
+  
+  <line x1="60" y1="50" x2="160" y2="50" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="60" y1="60" x2="160" y2="60" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="60" y1="70" x2="160" y2="70" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="60" y1="80" x2="160" y2="80" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="60" y1="90" x2="160" y2="90" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="60" y1="100" x2="160" y2="100" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="60" y1="110" x2="160" y2="110" stroke="#E0E0E0" stroke-width="0.5"/>
+  
+  <!-- Letters -->
+  <text x="65" y="48" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">P</text>
+  <text x="75" y="48" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">U</text>
+  <text x="85" y="48" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">Z</text>
+  <text x="95" y="48" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">Z</text>
+  <text x="105" y="48" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">L</text>
+  <text x="115" y="48" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">E</text>
+  <text x="125" y="48" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">S</text>
+  <text x="135" y="48" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">M</text>
+  <text x="145" y="48" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">K</text>
+  <text x="155" y="48" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">L</text>
+  
+  <text x="65" y="58" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">W</text>
+  <text x="75" y="58" text-anchor="middle" font-family="Arial" font-size="8" fill="#FF0000">O</text>
+  <text x="85" y="58" text-anchor="middle" font-family="Arial" font-size="8" fill="#FF0000">R</text>
+  <text x="95" y="58" text-anchor="middle" font-family="Arial" font-size="8" fill="#FF0000">D</text>
+  <text x="105" y="58" text-anchor="middle" font-family="Arial" font-size="8" fill="#FF0000">S</text>
+  <text x="115" y="58" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">T</text>
+  <text x="125" y="58" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">R</text>
+  <text x="135" y="58" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">A</text>
+  <text x="145" y="58" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">N</text>
+  <text x="155" y="58" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">D</text>
+  
+  <!-- Highlight the word "WORDS" -->
+  <rect x="72" y="52" width="38" height="8" fill="#FFFF00" opacity="0.3"/>
+  
+  <text x="110" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">WORD PUZZLE</text>
+  <text x="110" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E6E6FA">Find Hidden Words</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg width="220" height="175" viewBox="0 0 220 175" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="chessGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D2691E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="220" height="175" fill="url(#chessGradient)"/>
+  <!-- Chess board -->
+  <rect x="70" y="50" width="80" height="80" fill="#DEB887"/>
+  <!-- Chess squares alternating -->
+  <rect x="70" y="50" width="10" height="10" fill="#8B4513"/>
+  <rect x="90" y="50" width="10" height="10" fill="#8B4513"/>
+  <rect x="110" y="50" width="10" height="10" fill="#8B4513"/>
+  <rect x="130" y="50" width="10" height="10" fill="#8B4513"/>
+  <rect x="80" y="60" width="10" height="10" fill="#8B4513"/>
+  <rect x="100" y="60" width="10" height="10" fill="#8B4513"/>
+  <rect x="120" y="60" width="10" height="10" fill="#8B4513"/>
+  <rect x="140" y="60" width="10" height="10" fill="#8B4513"/>
+  <!-- Chess pieces -->
+  <text x="75" y="105" font-family="Arial" font-size="12" fill="black">♚</text>
+  <text x="85" y="105" font-family="Arial" font-size="12" fill="black">♛</text>
+  <text x="95" y="105" font-family="Arial" font-size="12" fill="black">♝</text>
+  <text x="105" y="105" font-family="Arial" font-size="12" fill="black">♞</text>
+  <text x="115" y="105" font-family="Arial" font-size="12" fill="black">♜</text>
+  <text x="125" y="105" font-family="Arial" font-size="12" fill="black">♟</text>
+  
+  <text x="75" y="85" font-family="Arial" font-size="12" fill="white">♔</text>
+  <text x="85" y="85" font-family="Arial" font-size="12" fill="white">♕</text>
+  <text x="95" y="85" font-family="Arial" font-size="12" fill="white">♗</text>
+  <text x="105" y="85" font-family="Arial" font-size="12" fill="white">♘</text>
+  <text x="115" y="85" font-family="Arial" font-size="12" fill="white">♖</text>
+  <text x="125" y="85" font-family="Arial" font-size="12" fill="white">♙</text>
+  
+  <text x="110" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">CHESS</text>
+  <text x="110" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#F5DEB3">Strategy Master</text>
+</svg>
