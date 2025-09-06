@@ -56,12 +56,12 @@ const nextConfig = {
             key: 'Content-Security-Policy',
             value: `
               default-src 'self';
-              script-src 'self' 'unsafe-inline' 'unsafe-eval' https://2games.io https://www.playpager.com https://playpager.com https://idev.games https://funhtml5games.com https://www.google.com;
+              script-src 'self' 'unsafe-inline' 'unsafe-eval' https://2games.io https://www.playpager.com https://playpager.com https://idev.games https://funhtml5games.com https://www.google.com https://plausibleonline.top;
               style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
               font-src 'self' https://fonts.gstatic.com;
               img-src 'self' data: https:;
               frame-src 'self' https://2games.io https://www.playpager.com https://playpager.com https://idev.games https://funhtml5games.com https://www.google.com;
-              connect-src 'self' https:;
+              connect-src 'self' https: https://plausibleonline.top;
               object-src 'none';
               base-uri 'self';
               form-action 'self';

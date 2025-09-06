@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import Navigation from '@/components/Navigation'
+import Analytics from '@/components/Analytics'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -68,7 +69,18 @@ export default function RootLayout({
           data-api="https://plausibleonline.top/api/event"
           src="https://plausibleonline.top/js/script.js"
           strategy="afterInteractive"
+          onLoad={() => {
+            console.log('Plausible script loaded successfully');
+            // Manual trigger for debugging
+            if (typeof window !== 'undefined' && window.plausible) {
+              console.log('Plausible function available');
+            }
+          }}
+          onError={(e) => {
+            console.error('Plausible script failed to load:', e);
+          }}
         />
+        <Analytics />
         <Navigation />
         <main className="min-h-screen bg-gradient-to-br from-red-50 via-pink-50 to-purple-50">
           {children}
