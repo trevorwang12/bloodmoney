@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import Navigation from '@/components/Navigation'
 import './globals.css'
 
@@ -59,10 +60,15 @@ export default function RootLayout({
         <link rel="preconnect" href="https://funhtml5games.com" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-        {/* Plausible Analytics */}
-        <script defer data-domain="blood-money.cc" src="https://plausibleonline.top/js/script.js"></script>
       </head>
       <body className={inter.className}>
+        <Script
+          defer
+          data-domain="blood-money.cc"
+          data-api="https://plausibleonline.top/api/event"
+          src="https://plausibleonline.top/js/script.js"
+          strategy="afterInteractive"
+        />
         <Navigation />
         <main className="min-h-screen bg-gradient-to-br from-red-50 via-pink-50 to-purple-50">
           {children}
