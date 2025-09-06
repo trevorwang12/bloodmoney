@@ -34,6 +34,12 @@ export const trackPageView = () => {
 // Fallback manual tracking function
 export const manualTrack = async (event: string = 'pageview') => {
   try {
+    // Check if we're in a browser environment
+    if (typeof window === 'undefined' || typeof document === 'undefined') {
+      console.warn('Manual tracking skipped - not in browser environment');
+      return;
+    }
+
     const data = {
       n: event,
       u: window.location.href,

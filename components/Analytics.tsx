@@ -1,46 +1,58 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import Script from 'next/script'
-import { trackPageView, manualTrack } from '@/lib/analytics'
 
 export default function Analytics() {
   const pathname = usePathname()
+  const [scriptLoaded, setScriptLoaded] = useState(false)
 
   useEffect(() => {
-    // Wait a bit for the script to load, then try tracking
+    if (!scriptLoaded) return;
+    
+    // Wait for script to be ready, then try tracking
     const timer = setTimeout(() => {
-      // Try Plausible first
-      trackPageView()
-      
-      // Fallback to manual tracking after another delay
-      setTimeout(() => {
-        if (typeof window !== 'undefined' && !window.plausible) {
-          console.log('Plausible not detected, using manual tracking');
-          manualTrack('pageview');
+      if (typeof window !== 'undefined') {
+        // Try to call plausible directly
+        if (window.plausible) {
+          window.plausible('pageview');
+          console.log('Plausible pageview tracked');
+        } else {
+          console.log('Plausible not available, trying manual tracking');
+          // Manual fallback
+          manualTrack();
         }
-      }, 1000);
-    }, 500);
+      }
+    }, 100);
 
     return () => clearTimeout(timer);
-  }, [pathname])
+  }, [pathname, scriptLoaded]);
 
-  // Debug info in development
-  useEffect(() => {
-    if (process.env.NODE_ENV === 'development') {
-      const checkPlausible = () => {
-        console.log('Checking Plausible availability...');
-        console.log('window.plausible:', typeof window.plausible);
-        console.log('Current URL:', window.location.href);
-        console.log('Domain should be:', 'blood-money.cc');
-      };
+  const manualTrack = async () => {
+    try {
+      if (typeof window === 'undefined') return;
       
-      // Check immediately and after delays
-      checkPlausible();
-      setTimeout(checkPlausible, 2000);
+      const data = {
+        n: 'pageview',
+        u: window.location.href,
+        d: 'blood-money.cc',
+        r: document?.referrer || null
+      };
+
+      const response = await fetch('https://plausibleonline.top/api/event', {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        console.log('Manual tracking successful');
+      }
+    } catch (error) {
+      console.error('Manual tracking failed:', error);
     }
-  }, []);
+  };
 
   return (
     <Script
@@ -50,15 +62,19 @@ export default function Analytics() {
       src="https://plausibleonline.top/js/script.js"
       strategy="afterInteractive"
       onLoad={() => {
-        console.log('Plausible script loaded successfully');
-        // Manual trigger for debugging
-        if (typeof window !== 'undefined' && window.plausible) {
-          console.log('Plausible function available');
-        }
+        console.log('Plausible script loaded');
+        setScriptLoaded(true);
       }}
       onError={(e) => {
-        console.error('Plausible script failed to load:', e);
+        console.error('Plausible script failed:', e);
+        setScriptLoaded(true); // Still try manual tracking
       }}
     />
   );
+}
+
+declare global {
+  interface Window {
+    plausible?: (event: string, options?: { props?: Record<string, string | number> }) => void;
+  }
 }
