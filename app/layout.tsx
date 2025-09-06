@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   keywords: 'Blood Money game, Blood Money online, Blood Money play free, dark clicker game, moral choice game, psychological game, browser game, incremental game, Blood Money Harvey, click for money, ethical dilemma game, dark humor game, story driven clicker',
   authors: [{ name: 'Blood Money Game Studio' }],
   robots: 'index, follow',
-  metadataBase: new URL('https://bloodmoney-game.vercel.app'),
+  metadataBase: new URL('https://blood-money.cc'),
   alternates: {
     canonical: '/',
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'BLOODMONEY! by SHROOMYCHRIST - Play Online Free',
     description: 'Play BLOODMONEY! by SHROOMYCHRIST online free! The ultimate dark clicker game with moral choices. Click for cash, save Harvey, face the consequences. Multiple endings await!',
     type: 'website',
-    url: 'https://bloodmoney-game.vercel.app',
+    url: 'https://blood-money.cc',
     siteName: 'Blood Money Game',
     images: [
       {
@@ -59,6 +59,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://funhtml5games.com" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        {/* Plausible Analytics */}
+        <script defer data-domain="blood-money.cc" src="https://plausibleonline.top/js/script.js"></script>
       </head>
       <body className={inter.className}>
         <Navigation />

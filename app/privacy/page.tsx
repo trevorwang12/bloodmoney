@@ -4,6 +4,9 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Privacy Policy - Blood Money Game Site',
   description: 'Our privacy policy outlines how we collect, use, and protect your information when you visit our gaming platform.',
+  alternates: {
+    canonical: '/privacy',
+  },
 }
 
 export default function PrivacyPolicyPage() {

@@ -1,4 +1,13 @@
 import Link from 'next/link'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Contact Us - Blood Money Game Site',
+  description: 'Get in touch with us about Blood Money games and other gaming content.',
+  alternates: {
+    canonical: '/contact',
+  },
+}
 
 export default function ContactPage() {
 

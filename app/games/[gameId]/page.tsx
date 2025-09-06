@@ -24,6 +24,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${game.title} - Blood Money Games`,
     description: game.description,
     keywords: game.tags.join(', '),
+    alternates: {
+      canonical: `/games/${game.id}`,
+    },
     openGraph: {
       title: game.title,
       description: game.shortDescription,

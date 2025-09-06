@@ -4,6 +4,9 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'About Us - Blood Money Game Site',
   description: 'Learn about our mission to provide engaging gaming experiences and explore thought-provoking narratives.',
+  alternates: {
+    canonical: '/about',
+  },
 }
 
 export default function AboutPage() {

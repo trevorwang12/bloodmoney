@@ -4,6 +4,9 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Terms of Service - Blood Money Game Site',
   description: 'Terms of Service for using the Blood Money game site and accessing embedded gaming content.',
+  alternates: {
+    canonical: '/terms',
+  },
 }
 
 export default function TermsOfServicePage() {
