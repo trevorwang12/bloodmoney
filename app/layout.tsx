@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import Navigation from '@/components/Navigation'
-import Analytics from '@/components/Analytics'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -60,9 +59,9 @@ export default function RootLayout({
         <link rel="preconnect" href="https://funhtml5games.com" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <script defer data-domain="blood-money.cc" data-api="https://plausibleonline.top/api/event" src="https://plausibleonline.top/js/script.js"></script>
       </head>
       <body className={inter.className}>
-        <Analytics />
         <Navigation />
         <main className="min-h-screen bg-gradient-to-br from-red-50 via-pink-50 to-purple-50">
           {children}
