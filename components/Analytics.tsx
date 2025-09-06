@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
+import Script from 'next/script'
 import { trackPageView, manualTrack } from '@/lib/analytics'
 
 export default function Analytics() {
@@ -41,5 +42,23 @@ export default function Analytics() {
     }
   }, []);
 
-  return null; // This component doesn't render anything
+  return (
+    <Script
+      defer
+      data-domain="blood-money.cc"
+      data-api="https://plausibleonline.top/api/event"
+      src="https://plausibleonline.top/js/script.js"
+      strategy="afterInteractive"
+      onLoad={() => {
+        console.log('Plausible script loaded successfully');
+        // Manual trigger for debugging
+        if (typeof window !== 'undefined' && window.plausible) {
+          console.log('Plausible function available');
+        }
+      }}
+      onError={(e) => {
+        console.error('Plausible script failed to load:', e);
+      }}
+    />
+  );
 }
